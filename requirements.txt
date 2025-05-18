@@ -1,6 +1,0 @@
-mysql-connector-python
-flask
-SQLAlchemy
-cryptography
-pyarmor
-uwsgi

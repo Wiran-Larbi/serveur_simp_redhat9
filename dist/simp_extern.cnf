@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 
-engine = db.create_engine('mysql+mysqlconnector://omar:omar@127.0.0.1:3306/simp_bcp', echo=True, pool_recycle=2, pool_size=100, max_overflow=0) 
+engine = db.create_engine('mysql+mysqlconnector://pts:Pts123$*@127.0.0.1:3306/simp', echo=True, pool_recycle=2, pool_size=100, max_overflow=0) 
 
 
 PLICENCE = 'gAAAAABndbrgHNEdV7nTQ9dw4uny62RbMUpu5qPN4NXosM12XcbFss3YsvkM49aGOWqafHM_UULvC-VFcmW_d9qdMbrlNfXhUFaRK2p0fFbwk9kCsC95c3g='
-LOGPATH = '/home/omar/Desktop/logtest'
+LOGPATH = '/home/pts/logs'
