@@ -1,0 +1,17 @@
+_locals = locals()
+data = _locals['data']
+issuerAccountReferenceId= data['issuerAccountReferenceId']
+authenticationToken = data['authenticationToken']
+hceTechnicalId= data['hceTechnicalId']
+request = requests.post( 'http://127.0.0.1:7778/checkUserAuthentification' , json={'authenticationToken': authenticationToken, 'issuerAccountReferenceId': >status_code = request.status_code
+status_code = requestsent.status_code
+if str(status_code) == str(200) : 
+    request = requests.post( 'https://127.0.0.1:7778/digitize'  , json={'hceTechnicalId': hceTechnicalId, 'issuerAccountReferenceId': issuerAccountReferenceId}, verify=False)
+    status_code = requestsent.status_code
+    response = request.json()
+    if str(status_code) == str(200) : 
+        traceId = response['traceId']
+        request = requests.post( 'https://127.0.0.1:7778/digitizeStatus' , json={'issuerAccountReferenceId': issuerAccountReferenceId, 'traceId': traceId}, verify=False)
+        
+    
+	
